@@ -1,4 +1,5 @@
-<%= form_for (@article) do |f| %>
+<%= form_for(@article, html: {multipart: true}) do |f| %>
+
 <ul>
   <% @article.errors.full_messages.each do |error| %>
   <li><%= error %></li>
@@ -16,6 +17,11 @@
 </p>
 
 <p>
+  <%= f.label :image, "Attach an Image" %><br>
+  <%= f.file_field :image %>
+</p>
+
+<p>
   <%= f.submit %>
 </p>
 
@@ -24,5 +30,4 @@
   <%= f.text_field :tag_list %>
 </p>
 
-
-  <% end %>
+<% end %>

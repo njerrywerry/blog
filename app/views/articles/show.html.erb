@@ -9,7 +9,11 @@
 
 <br>
 
-<p><%= image_tag @article.image.url %></p>
+<p>
+  <% if @article.image.exists? %>
+  <%= image_tag @article.image.url %>
+  <% end %>
+</p>
 
 <br>
 

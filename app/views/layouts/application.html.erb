@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+  <title>My Two Cents</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -20,8 +20,6 @@
      <% if logged_in? %>
       <%= "Logged in as #{current_user.email}" %>
       <%= link_to "(logout)", logout_path %>
-    <% else %>
-    <%= link_to "(login)", login_path %>
     <% end %>
    </h6>
   </div>

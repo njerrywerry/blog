@@ -7,9 +7,12 @@
     </li>
   <% end %>
 </ul>
-
+<% if logged_in? %>
 <%= link_to "Create New Article", new_article_path, class: 'new_article' %>
+<% end %>
 <br>
 <%= link_to "Tags", tags_path %>
 <br>
+<% if logged_in? %>
 <%= link_to "Authors", authors_path %>
+<% end %>

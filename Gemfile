@@ -60,5 +60,6 @@ group :test do
   gem 'launchy'
 end
 
+gem 'activeadmin', '1.0.0.pre1'
 
 ruby "2.2.2"

@@ -16,6 +16,17 @@
   <%= f.text_area :body %>
 </p>
 
+<p class="field published-field">
+  <%= f.label :published_at, "Publish At"%><br>
+  <%= f.datetime_select :published_at %>
+</p>
+
+<p>
+  <%= f.label :status %><br>
+  <%= f.select :status, ["Draft", "Published", "Scheduled"], selected: status_for(@article) %>
+</p>
+
+
 <p>
   <% if @article.image.exists? %>
    <%= image_tag @article.image.url %>

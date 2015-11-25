@@ -2,3 +2,5 @@
 
 This is a Rails based blogging application that runs on Rails version 4.2.1, Ruby version 2.2.2. It is hosted on the Sqlite3 database.
 
+A lil bit of jquery to help schedule future posts 
+

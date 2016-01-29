@@ -80,7 +80,4 @@ ActiveRecord::Schema.define(version: 20151122190206) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "comments", "articles"
-  add_foreign_key "taggings", "articles"
-  add_foreign_key "taggings", "tags"
 end
